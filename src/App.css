@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+}
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+body {
+  background-color: #f1f3fa;
+}
+.app__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.app__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__left {
+  flex: 0.9;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .app {
+    flex-direction: column;
+  }
+}
+/* new */
+@media (max-width: 630px) {
+  .app__stats {
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+}
